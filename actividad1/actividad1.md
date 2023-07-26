@@ -9,7 +9,7 @@
 
 - ## Tipos de ***kernel*** y sus diferencias
 
-| Tipo                               | Descripción   |
+| Tipo                               | Diferencias   |
 | ------------------------------------ | --------- |
 |**Kernel monolítico** <br/><br/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kernel-monolithic.svg/1200px-Kernel-monolithic.svg.png" alt="drawing" width="150"><br/><br/>|Es un *kernel* de gran tamaño que se encarga de todas las tareas, por si mismo realiza la gestión de memoria y de los procesos, de la comunicación entre procesos y proporciona funciones de soporte de drivers y hardware.|
 |**Microkernel** <br/><br/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Kernel-microkernel.svg/400px-Kernel-microkernel.svg.png" alt="drawing" width="150"><br/><br/>| Está diseñado con un tamaño reducido, esto de manera intencional con el propósito de que si falla no se paralice todo el sistema. Está compuesto por varios módulos para que pueda asumir las mismas tareas y funciones que un *kernel* grande.|
