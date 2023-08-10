@@ -1,4 +1,4 @@
-### Actividad 3
+# Actividad 3
 
 <div id='content'/>
   
@@ -6,6 +6,7 @@
 #### [Parte 1: Gestión de Usuarios](#id1)
 #### [Parte 2: Gestión de Grupos](#id2)
 #### [Parte 3: Gestión de Permisos](#id3)
+#### [Reflexión](#id4)
 
 
 <div id='id1'/>
@@ -118,6 +119,19 @@ groupdel grupo2
 > 
 > <img src="images/16.png" alt="drawing" width="500">
 
+> **Tabla de permisos**
+>
+> |Representación numérica|Representación simbólica|Descripción|
+> |--|--|--|
+> |0|---|Sin acceso|
+> |1|--x  |Ejecución|
+> |2|-w-|Escritura|
+> |3|-wx|Escritura y ejecución|
+> |4|r--|Lectura|
+> |5|r-x|Lectura y ejecución|
+> |6|rw-|Lectura y escritura|
+> |7|rwx|Lectura, escritura y ejecución|
+
 Creación de archivo en el directorio principal del usuario 
 
 ```
@@ -209,4 +223,22 @@ ls -l
 ls -ld
 ```
 <img src="images/25.png" alt="drawing" width="500">
+
+<div id='id4'/>
+  
+# Reflexión [ ⇧](#content)
+- **¿Por qué es importante gestionar correctamente los usuarios y permisos en un sistema operativo?**
+La importancia de una correcta gestión de usuarios radica en la seguridad que esta le brinda a nuestros archivos, permitiendo restringir las acciones que dichos usuarios pueden realizar y previniendo un uso inadecuado de la información.
+
+- **¿Qué otros comandos o técnicas conocen para gestionar permisos en Linux?**
+Algunos comandos adicionales a los presentados en esta actividad son:
+
+|Comando|Descripción|
+|--|--|
+|***groupmod***|Permite modificar un grupo.|
+|***gpasswd***|Permite cambiar la contraseña de un grupo.|
+|***whoami***|Permite saber cual es el usuario autenticado actualmente.|
+|***su***|Comando utilizado para cambiar de usuario.|
+|***who*** o ***w***|Sirve para saber cuáles usuarios están conectados en la máquina en un determinado momento.|
+|***write*** o ***wall***|Permite enviar mensajes de al resto de usuarios logueados|
 
